@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Piedra papel o tijeras</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+	<section id="game-zone">
+		<figure>
+			<figcaption>Jugador</figcaption>
+			<img id="playerChoice" src="images/rock.png" alt="Eleección del jugador.">
+		</figure>
+		<figure>
+			<figcaption>Computador</figcaption>
+			<img id="computerChoice" src="images/rock.png" alt="Elección del computador.">
+		</figure>
+	</section>
+	<p id="result"><strong id="ganador">Tú empatas,</strong> escogiendo <strong id="playerResult">piedra</strong> en contra de <strong id="computerResult">piedra</strong></p>
+	<p id="score">Tú puntuación es de <strong id="points">0</strong>.<br> Tú puntuación disminuye en un punto cada que pierdes y aumenta en un punto cada que ganas.</p>
+	<section>
+		<p>Escoge una opción:</p>
+		<button data-choice="piedra">
+			<img src="images/rock.png" alt="Jugar usando piedra">
+		</button>
+		<button data-choice="papel">
+			<img src="images/paper.png" alt="Jugar usando papel">
+		</button>
+		<button data-choice="tijeras">
+			<img src="images/scissors.png" alt="Jugar usando tijeras">
+		</button>
+	</section>
+
+	<script src="app2.js"></script>
+</body>
+</html>
